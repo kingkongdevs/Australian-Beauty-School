@@ -14,8 +14,8 @@ export default {
             }
         },
         fontFamily: {
-            'sans': ['ui-sans-serif', 'system-ui'],
-            'serif': ['ui-serif', 'Georgia'],
+            'sans': ['Onest', 'system-ui'],
+            'serif': ['Inter', 'system-ui'],
         },        
         extend: {
             fontSize: {

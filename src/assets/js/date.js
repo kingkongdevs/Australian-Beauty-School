@@ -7,7 +7,7 @@ export default function date() {
     let monthEls = document.querySelectorAll('.dyn-month');
     let yearEls = document.querySelectorAll('.dyn-year');
 
-    monthEls.forEach(function(el, index){
+       monthEls.forEach(function(el, index){
         el.textContent = thisMonth;
     });
 

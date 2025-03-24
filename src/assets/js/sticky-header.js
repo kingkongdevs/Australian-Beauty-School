@@ -1,22 +1,61 @@
 export default function stickyHeader() {
 
-	let headerEl = document.querySelector('.site-header');
+  const headerEl = document.querySelector('.site-header');
+  if (!headerEl) return;
 
-	if(!headerEl){
-		return;
-	}
+  let lastScrollY = window.scrollY;
 
-	_checkScrolled();
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
 
-	window.addEventListener('scroll', function(){
-		_checkScrolled();
-	});
+    // If near the top of the page, always show the header
+    if (currentScrollY < 30) {
+      headerEl.classList.remove('-translate-y-80');
+    }
+    // If scrolling down and past the 30px threshold, hide the header
+    else if (currentScrollY > lastScrollY) {
+      headerEl.classList.add('-translate-y-80');
+    }
+    // If scrolling up, show the header again
+    else if (currentScrollY < lastScrollY) {
+      headerEl.classList.remove('-translate-y-80');
+    }
+    
+    lastScrollY = currentScrollY;
+  });
 
-	function _checkScrolled(){
-		if(window.scrollY >= 30){
-			headerEl.classList.add('bg-white','shadow-lg');
-		}else{
-			headerEl.classList.remove('bg-white','shadow-lg');
-		}
-	}
+	// const hamburgerBtn = document.getElementById("hamburger-menu");
+  // const mobileMenuEl = document.getElementById("mobile-menu");
+  // if (!hamburgerBtn || !mobileMenuEl) return;
+
+  // // Helper function to set the menu state
+  // function setMenuState(isOpen) {
+  //   if (isOpen) {
+  //     mobileMenuEl.classList.remove("h-0");
+  //     mobileMenuEl.classList.add("h-[100vh]");
+  //   } else {
+  //     mobileMenuEl.classList.remove("h-[100vh]");
+  //     mobileMenuEl.classList.add("h-0");
+  //   }
+  //   console.log("Mobile menu classes:", mobileMenuEl.className);
+  // }
+
+  // // Toggle function: toggles the current state
+  // function toggleMenu() {
+  //   const isOpen = mobileMenuEl.classList.contains("h-[100vh]");
+  //   setMenuState(!isOpen);
+  // }
+
+  // // Attach the toggle function to the hamburger button
+  // hamburgerBtn.addEventListener("click", toggleMenu);
+
+  // // Attach click handlers to all mobile menu <a> items to close the menu
+  // const mobileMenuItems = mobileMenuEl.querySelectorAll("li a");
+  // mobileMenuItems.forEach(item => {
+  //   item.addEventListener("click", () => {
+  //     if (mobileMenuEl.classList.contains("h-[100vh]")) {
+  //       setMenuState(false);
+  //     }
+  //   });
+  // });
 }

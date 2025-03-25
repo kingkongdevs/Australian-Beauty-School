@@ -36,9 +36,9 @@ export default function sliders() {
 			pagination: {
 				el: paginationEl ? paginationEl : '',
 				clickable: true,
-				bulletActiveClass: 'text-green-500',
+				bulletActiveClass: 'bg-[#f472b6]',
 				renderBullet: function (index, className) {
-					className += ' cursor-pointer w-3.5 h-3.5 rounded-full bg-[currentColor] mx-1';
+					className += ' cursor-pointer w-3.5 h-3.5 rounded-full bg-[#fbcfe8] mx-1';
 					return '<span class="'+className+'"></span>'
 				}
 			},
@@ -47,67 +47,50 @@ export default function sliders() {
 
 		if(el.classList.contains('swiper-cutoff')){
 			options.slidesPerView = 1.5;
-		}
+		} 
 
-		if (el.classList.contains('image-after-before-holder')) {
-			options.autoplay = false;
-			options.allowTouchMove = false;
-			options.centeredSlides = false;
-			options.breakpoints = {
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 40
-				},
-				1200: {
-					slidesPerView: 3,
-					spaceBetween: 80,
-				},
-			}
-		}
 
 		if (el.classList.contains('swiper-testimonial-blocks')) {
 			options.centeredSlides = false
 			options.slidesPerView = 1;
-			options.slidesOffsetbefore = 0;
+			
 			options.breakpoints = {
 				640: {
+					slidesPerGroup: 2,
 					spaceBetween: 20,
-					slidesOffsetBefore: 100,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 50,
-					slidesOffsetBefore: 250,
-				},
+					slidesPerView: 2,
+					 
+				}
+				 
 			}
 		}
 
-		// For gallery sliders
-		if (controls) {
-			options.thumbs.swiper = new Swiper(controls, {
-				speed: 600,
-				loop: true,
-				slidesPerView: 2,
-				spaceBetween: 10,
-				lazy: true,
-				watchSlidesVisibility: true,
-				watchSlidesProgress: true,
-				slideToClickedSlide: true,
-				controller: {},
-				autoplay: {
-					delay: 5000,
-					disableOnInteraction: true,
-				},
-				breakpoints: {
-					640: {
-						slidesPerView: 3,
-					},
-					992: {
-						slidesPerView: 4,
-					},
-				},
-			})
-		}
+		// // For gallery sliders
+		// if (controls) {
+		// 	options.thumbs.swiper = new Swiper(controls, {
+		// 		speed: 600,
+		// 		loop: true,
+		// 		slidesPerView: 2,
+		// 		spaceBetween: 10,
+		// 		lazy: true,
+		// 		watchSlidesVisibility: true,
+		// 		watchSlidesProgress: true,
+		// 		slideToClickedSlide: true,
+		// 		controller: {},
+		// 		autoplay: {
+		// 			delay: 5000,
+		// 			disableOnInteraction: true,
+		// 		},
+		// 		breakpoints: {
+		// 			640: {
+		// 				slidesPerView: 3,
+		// 			},
+		// 			992: {
+		// 				slidesPerView: 4,
+		// 			},
+		// 		},
+		// 	})
+		// }
 
 		let mainSwiper = new Swiper(el, options)
 

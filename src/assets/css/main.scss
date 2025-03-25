@@ -94,11 +94,12 @@
       }
 
       h3, .h3 {
-         @apply text-xl
+         @apply 
+         text-xl
          font-semibold
          font-['Onest']
          leading-7
-         lg:text-2xl
+         lg:text-2xl;
          
       }
       

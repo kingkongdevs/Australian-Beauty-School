@@ -57,7 +57,7 @@ export default function sliders() {
 			options.breakpoints = {
 				640: {
 					slidesPerGroup: 2,
-					spaceBetween: 20,
+					spaceBetween: 0,
 					slidesPerView: 2,
 					 
 				}

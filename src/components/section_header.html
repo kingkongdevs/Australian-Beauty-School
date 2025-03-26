@@ -5,24 +5,26 @@
                 <if condition="page === 'offer'">
                     <a href="#top">
                         <span class="sr-only">Logo</span>
-                        <icon width="120" src="logo.svg"></icon>
+                        <icon class="h-auto w-36 md:w-52" src="logo.svg"></icon>
                     </a>
                 </if>
                 <else>
                     <a href="/">
                         <span class="sr-only">Logo</span>
-                        <icon width="120" src="logo.svg"></icon>
+                        <icon class="h-auto w-36 md:w-52" src="logo.svg"></icon>
                     </a>
                 </else>
 
             </div>
             <a href="tel:1300 937 326" class="flex items-center" title="phone">
-                <div class="md:mr-3">
-                    <icon class="w-6" src="icon-call.svg"></icon>
+                <div class="md:mr-2">
+                    <icon class="size-8 md:size-10" src="icon-call.svg"></icon>
                 </div>
-                <div class="flex-col hidden text-xl leading-tight text-green-500 md:flex phone-text">
-                    <span class="block">Any Questions?</span>
-                    <em class="not-italic font-bold">1300 937 326</em>
+                <div class="flex-col hidden gap-1 md:flex phone-text">
+                    <span class="block text-pink-400 text-base font-normal font-['Inter'] leading-none">
+                        Any Questions?
+                    </span>
+                    <em class="not-italic  text-slate-900 text-xl font-semibold font-['Onest'] leading-none">1300 937 326</em>
                 </div>
             </a>
         </div>

@@ -1537,11 +1537,18 @@
   
           
   
-          <form method="POST" action="" id="offer-form" class="kk-validation ">
-            
+          <form method="POST" action="https://learningonlinegroup.activehosted.com/proc.php" id="offer-form" class="kk-validation ">
+    <input type="hidden" name="u" value="3" />
+      <input type="hidden" name="f" value="3" />
+        <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+      <input type="hidden" name="v" value="2" />
+    <input type="hidden" name="or" value="b5c604ef-f462-43ab-b37a-6a5dca77d160" />
             
             <div class="relative mb-2">
-              <label class="sr-only" for="name">Full Name:</label>
+              <label class="sr-only" for="firstname">Full Name:</label>
               <span class="absolute w-5 top-[1.85rem] left-6">
                 <img class="w-full" src="icon-name.svg" />
               </span>
@@ -1550,9 +1557,9 @@
               <input
                 type="text"
                 class="w-full text-lg font-normal font-['Onest'] leading-relaxed bg-white rounded-full border-[#e7e5e4] border h-20  pl-14 autofill:bg-white autofill:bg-none autofill:text-black focus-within:bg-[#fdf4ff]  focus:ring-0 focus:outline-none focus-within:border focus-within:border-[#f472b6]"
-                name="name"
-                id="name"
-                placeholder="Name"
+                name="firstname"
+                id="firstname"
+                placeholder="First Name*"
                 required=""
               />
             </div>
@@ -1567,7 +1574,7 @@
                 class="w-full text-lg font-normal font-['Onest'] leading-relaxed bg-white rounded-full border-[#e7e5e4] border h-20  pl-14 autofill:bg-white autofill:bg-none autofill:text-black focus-within:bg-[#fdf4ff]  focus:ring-0 focus:outline-none focus-within:border focus-within:border-[#f472b6]"
                 name="email"
                 id="email"
-                placeholder="Email"
+                placeholder="Email Address*"
                 required=""
               />
             </div>
@@ -1588,14 +1595,14 @@
             </div>
   
             <div class="relative mb-2">
-              <label class="sr-only" for="message">Message:</label>
+              <label class="sr-only" for="field[1]">Message:</label>
               <span class="absolute w-5 top-[1.25rem] left-6">
                 <img class="w-full" src="icon-message.svg" />
               </span>
               <textarea
                 class="w-full pt-3 text-black bg-white rounded-3xl  text-lg font-normal font-['Onest'] leading-relaxed border-[#e7e5e4] border h-44   pl-14 autofill:bg-white autofill:bg-none autofill:text-black  focus-within:bg-[#fdf4ff]  focus:ring-0 focus:outline-none focus-within:border focus-within:border-[#f472b6]"
-                 name="message"
-                id="message"
+                 name="field[1]"
+                id="field[1]"
                 placeholder="Have questions?"
                 required=""
               ></textarea>

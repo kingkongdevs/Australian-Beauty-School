@@ -213,10 +213,17 @@ Download it today, and you’ll discover </p>
                             
                         </p>
 
-                        <form accept-charset="UTF-8" action="" class="pb-24 kk-validation kk-showthankyou" id="ebook-form" method="POST">
-
+                        <form accept-charset="UTF-8" action="https://learningonlinegroup.activehosted.com/proc.php" class="pb-24 kk-validation kk-showthankyou" id="ebook-form" method="POST">
+                            <input type="hidden" name="u" value="1" />
+                                <input type="hidden" name="f" value="1" />
+                                    <input type="hidden" name="s" />
+                                        <input type="hidden" name="c" value="0" />
+                                        <input type="hidden" name="m" value="0" />
+                                    <input type="hidden" name="act" value="sub" />
+                                <input type="hidden" name="v" value="2" />
+                            <input type="hidden" name="or" value="1d56531f-7e1c-46c1-8778-f52b0df56592" />
                             <div class="relative mb-2">
-                                <label class="sr-only" for="name">First Name:</label>
+                                <label class="sr-only" for="firstname">First Name:</label>
                                 <span class="absolute w-5 top-[1.85rem] left-6">
                                   <img class="w-full" src="icon-name.svg" />
                                 </span>
@@ -225,8 +232,8 @@ Download it today, and you’ll discover </p>
                                 <input
                                   type="text"
                                   class="w-full text-lg font-normal font-['Onest'] leading-relaxed bg-white rounded-full border-[#e7e5e4] border h-20  pl-14 autofill:bg-white autofill:bg-none autofill:text-black focus-within:bg-[#fdf4ff]  focus:ring-0 focus:outline-none focus-within:border focus-within:border-[#f472b6]"
-                                  name="name"
-                                  id="name"
+                                  name="firstname"
+                                  id="firstname"
                                   placeholder="First Name*"
                                   required=""
                                 />
@@ -242,7 +249,7 @@ Download it today, and you’ll discover </p>
                                   class="w-full text-lg font-normal font-['Onest'] leading-relaxed bg-white rounded-full border-[#e7e5e4] border h-20  pl-14 autofill:bg-white autofill:bg-none autofill:text-black focus-within:bg-[#fdf4ff]  focus:ring-0 focus:outline-none focus-within:border focus-within:border-[#f472b6]"
                                   name="email"
                                   id="email"
-                                  placeholder="Email"
+                                  placeholder="Email Address*"
                                   required=""
                                 />
                               </div>

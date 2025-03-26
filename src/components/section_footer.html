@@ -1,18 +1,32 @@
 <!-- Footer - King Kong Tag -->
 <footer>
-    <div class="container">
-        <div class="flex justify-center text-center">
-            <div class="py-4 col-12 lg:text-xl">
-                <p>Copyright © <span class="dyn-year">Since 2025</span> <small><a data-mm-target="termsConditions" class="cursor-pointer hover:underline">Terms & Conditions</a>  
+    <div class="container py-20 border-t lg-py-24 border-black/10">
+        <div class="flex flex-col items-center justify-center text-center ">
+            <div class="mb-4 lg:mb-8 logo">
+                <if condition="page === 'offer'">
+                    <a href="#top">
+                        <span class="sr-only">Logo</span>
+                        <icon class="w-56 h-auto md:w-80" src="logo.svg"></icon>
+                    </a>
+                </if>
+                <else>
+                    <a href="/">
+                        <span class="sr-only">Logo</span>
+                        <icon class="w-56 h-auto md:w-80" src="logo.svg"></icon>
+                    </a>
+                </else>
+            </div>
+            <div class="py-4 w-full text-stone-900 text-base font-normal font-['Inter'] leading-normal [&_small]:text-base lg:text-lg lg:[&_small]:text-lg ">
+                <p class="mb-4 lg:mb-8">Copyright © <span class="dyn-year">Since 2025</span>. All Rights Reserved. <small> | <a data-mm-target="termsConditions" class="cursor-pointer hover:underline">Terms & Conditions</a>  
                     <!-- <a data-mm-target="privacyPolicy"  class="cursor-pointer hover:underline">Privacy Policy</a>  -->
                 </small></p>
 
                 <if condition="page === 'offer'">
-                    <small>Landing Page & Digital Marketing by <a href="https://kingkong.co" target="_blank">King Kong</a></small>
+                    <small>Digital Marketing by <a href="https://kingkong.co" target="_blank" class="hover:underline">King Kong</a></small>
                 </if>
 
                 <else>
-                    <small>Landing Page & Digital Marketing by King Kong</small>
+                    <small>Digital Marketing by King Kong</small>
                 </else>
             </div>
         </div>

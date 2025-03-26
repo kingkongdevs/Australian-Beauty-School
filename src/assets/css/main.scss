@@ -79,7 +79,9 @@
         @apply  font-sans text-base lg:text-lg font-normal leading-relaxed;
     }
 
-    p.eyebrow {@apply w-full md:w-max px-3.5 py-[5px] bg-white rounded-[100px] shadow-[0px_16px_35px_0px_rgba(1,18,60,0.07)] outline outline-1 outline-offset-[-1px] outline-zinc-100 inline-flex justify-center items-center gap-2.5 text-zinc-950 text-sm font-semibold font-['Onest'] uppercase tracking-wide mb-4;}
+    p.eyebrow {
+      @apply w-full md:w-max px-3.5 py-[5px] bg-white rounded-[100px] shadow-[0px_16px_35px_0px_rgba(1,18,60,0.07)] outline outline-1 outline-offset-[-1px] outline-zinc-100 inline-flex justify-center items-center gap-2.5 text-zinc-950 text-sm font-semibold font-['Onest'] uppercase tracking-wide mb-4
+      uppercase;}
 
     h1, .h1 {
       @apply 
@@ -130,4 +132,6 @@
         color: red;
         font-size: 1rem;
     }
+
+    
 }

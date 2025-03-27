@@ -36,7 +36,7 @@ export default function sliders() {
 			pagination: {
 				el: paginationEl ? paginationEl : '',
 				clickable: true,
-				bulletActiveClass: 'bg-[#f472b6]',
+				bulletActiveClass: '!bg-[#f472b6]',
 				renderBullet: function (index, className) {
 					className += ' cursor-pointer w-3.5 h-3.5 rounded-full bg-[#fbcfe8] mx-1';
 					return '<span class="'+className+'"></span>'

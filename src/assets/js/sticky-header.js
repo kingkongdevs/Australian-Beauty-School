@@ -10,15 +10,19 @@ export default function stickyHeader() {
 
     // If near the top of the page, always show the header
     if (currentScrollY < 30) {
-      headerEl.classList.remove('-translate-y-80');
+      headerEl.classList.remove('-translate-y-80', 'bg-white');
+    z
     }
     // If scrolling down and past the 30px threshold, hide the header
     else if (currentScrollY > lastScrollY) {
       headerEl.classList.add('-translate-y-80');
+      headerEl.classList.remove('bg-white');
+
     }
     // If scrolling up, show the header again
     else if (currentScrollY < lastScrollY) {
       headerEl.classList.remove('-translate-y-80');
+      headerEl.classList.add('bg-white');
     }
     
     lastScrollY = currentScrollY;

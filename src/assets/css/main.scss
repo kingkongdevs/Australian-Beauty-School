@@ -83,8 +83,7 @@
         @apply  font-sans text-base lg:text-lg font-normal leading-relaxed;
     }
 
-    p.eyebrow {
-      @apply w-full  px-3.5 md:px-7 md:!pe-16 py-[11px] bg-white rounded-[100px] shadow-[0px_16px_35px_0px_rgba(1,18,60,0.07)] outline outline-1 outline-offset-[-1px] outline-zinc-100 inline-flex justify-center items-center gap-2.5 text-zinc-950 text-sm font-semibold font-['Onest']  leading-[1.2]  tracking-wide mb-4 md:text-base uppercase;}
+    p.eyebrow { @apply border-2 border-[#09090b]/10 w-full  px-3.5 md:px-7 md:!pe-16 py-[11px]  rounded-[100px] shadow-[0px_16px_35px_0px_rgba(1,18,60,0.07)] outline outline-1 outline-offset-[-1px] outline-zinc-100 inline-flex justify-center items-center gap-2.5 text-zinc-950 text-sm font-semibold font-['Onest']  leading-[1.2]  tracking-wide mb-4 md:text-base uppercase;}
 
     h1, .h1 {
       @apply 

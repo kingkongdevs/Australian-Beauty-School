@@ -1478,13 +1478,14 @@
 
 <!-- Dark Mode Single Column  -->
   <section class="px-2 pt-16 md:pt-24 lg:pt-28 ">
+    
     <div class="mx-auto max-w-[85.125rem] relative flex flex-wrap items-center justify-center px-4 md:px-8 py-24 overflow-hidden text-white bg-black gap-x-4 gap-y-8 rounded-2xl ">
-      <div class="hidden md:block absolute w-80 h-[16rem] top-[-14rem] -left-[30rem] z-0">
-        <include src="waves-left.svg"></include>
-    </div>
-    <div class="hidden md:block absolute w-80 h-[16rem] bottom-[14rem] -right-[1rem] z-0">
-        <include src="waves-right.svg"></include>
-    </div>
+      <div class="hidden md:block absolute w-80 h-[16rem] -top-[11rem] -left-[1rem] z-0">
+        <include src="dark-waves-left.svg"></include>
+      </div>
+      <div class="hidden md:block absolute w-80 h-[16rem] bottom-[16rem] right-[3rem] z-0">
+          <include src="dark-waves-right.svg"></include>
+      </div>
     <div class="w-full mx-auto md:8/12 lg:w-6/12">
         <icon src="guarantee-badge.svg" class="max-w-full mx-auto mb-4 size-56"></icon>
         <h2 class="text-center text-white   tracking-[-1px]">
@@ -1512,7 +1513,7 @@
 
 <!-- Image Marquee  -->
   <section>
-    <div class="container mb-16 -mt-16">
+    <div class="container mb-16 -mt-8">
       <div class="flex gap-2">
         <ul
           class="flex items-start justify-around min-w-full gap-2 p-0 lg animate-marquee shrink-0"

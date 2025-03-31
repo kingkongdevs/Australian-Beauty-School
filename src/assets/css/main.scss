@@ -144,6 +144,7 @@
 
     .view-animation {
       opacity: 0;
+      transition: 1s;
    }
    
    .animated {
@@ -157,6 +158,51 @@
 .fade-right {
 	&.animated {
 		transform: translate3d(0, 0, 0);
+	}
+}
+
+.delay {
+	&-0 {
+		animation-delay: 0s;
+		transition-delay: 0s;
+	}
+
+	&-1 {
+		animation-delay: 0.25s;
+		transition-delay: 0.25s;
+	}
+
+	&-2 {
+		animation-delay: 0.5s;
+		transition-delay: 0.5s;
+	}
+
+	&-3 {
+		animation-delay: 0.75s;
+		transition-delay: 0.75s;
+	}
+
+	&-4 {
+		animation-delay: 1s;
+		transition-delay: 1s;
+	}
+
+	&-5 {
+		animation-delay: 1.25s;
+		transition-delay: 1.25s;
+	}
+
+	&-6 {
+		animation-delay: 1.5s;
+		transition-delay: 1.5s;
+	}
+}
+
+.swing {
+   transform: rotate(-140deg);
+
+   &.animated {
+		@apply rotate-[-60deg] md:rotate-[-80deg]
 	}
 }
 

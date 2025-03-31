@@ -142,5 +142,39 @@
         font-size: 1rem;
     }
 
+    .view-animation {
+      opacity: 0;
+   }
+   
+   .animated {
+      opacity: 1;
+      transition: 1s;
+   }
+
+.fade-up,
+.fade-down,
+.fade-left,
+.fade-right {
+	&.animated {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+.fade-up {
+	transform: translate3d(0, 100px, 0);
+}
+
+.fade-down {
+	transform: translate3d(0, -100px, 0);
+}
+
+.fade-left {
+	transform: translate3d(100px, 0, 0);
+}
+
+.fade-right {
+	transform: translate3d(-100px, 0, 0);
+}
     
 }

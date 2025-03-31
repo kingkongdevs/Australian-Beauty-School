@@ -33,10 +33,10 @@
    <!-- Hero - Centered Content -->
    <section class="relative px-2 pt-20 pb-16 text-center md:pt-24 md:pb-24 lg:py-28 ">
     <div class="absolute top-0 left-0 z-10 w-full h-full pointer-events-none">
-      <div class="hidden md:block absolute w-80 h-[16rem] bottom-[26rem] -left-[29rem] z-0">
+      <div class="hidden md:block absolute w-80 h-[16rem] bottom-[26rem] -left-[29rem] z-0    ">
         <include src="waves-left.svg"></include>
       </div>
-      <div class="hidden md:block absolute w-80 h-[16rem] top-[0] -right-[-1rem] z-0">
+      <div class="hidden md:block absolute w-80 h-[16rem] top-[0] -right-[-1rem] z-0 view-animation fade-left">
           <include src="waves-right.svg"></include>
       </div> 
     </div>
@@ -196,7 +196,7 @@
         
         </div>
         <div class="w-full md:w-5/12 lg:w-6/12">
-          <img class="w-full slideinright view-animation " src="cert.png" />
+          <img class="w-full  view-animation fade-left " src="cert.png" />
         </div>
       </div>
     </div>
@@ -214,7 +214,7 @@
     <div class="container px-4">
       <div class="flex flex-wrap items-center md:justify-center lg:flex-nowrap gap-x-8">
         <div class="order-2 w-full md:w-5/12 md:order-1">
-          <img class="w-full" src="sessions.png" />
+          <img class="w-full  view-animation fade-right" src="sessions.png" />
         </div>
         <div class="order-1 w-11/12 p-0 md:w-6/12 md:order-2 md:pe-2 ">
           <h2 class="mb-4 tracking-[-1px] md:tracking-[-2px] ">
@@ -243,7 +243,7 @@
             </h2>
           </div>
           
-        <div class="flex flex-wrap justify-center mb-4">
+        <div class="flex flex-wrap justify-center mb-4  view-animation fade-up">
             <div class="items-end w-full mb-4 md:flex md:w-10/12">
                 <img src="before.png" />
                 <img src="after.png" />
@@ -270,7 +270,7 @@
 
   <!-- Single Copy  -->
   <section class="relative px-2 pb-16 md:pb-24">
-    <div class="hidden md:block absolute w-80 h-[16rem] top-[-4%] -right-[-1rem] z-0 [&_svg_#Rwaves]:hidden">
+    <div class="hidden md:block absolute w-80 h-[16rem] top-[-4%] -right-[-1rem] z-0 [&_svg_#Rwaves]:hidden view-animation fade-up">
       <include src="waves-right.svg"></include>
   </div>
     <div class="container px-4">
@@ -280,7 +280,7 @@
             </h2>
           </div>
           
-          <div class="relative flex justify-center w-full mx-auto my-10 md:px-8 lg:pb-4 md:w-10/12 scale-[1.05] md:scale-[1]">
+          <div class="relative flex justify-center w-full mx-auto my-10 md:px-8 lg:pb-4 md:w-10/12 scale-[1.05] md:scale-[1] view-animation fade-up">
             <div class="max-w-64 h-auto  z-20 -mr-8 bg-white shadow-[0px_19.350326538085938px_129.00216674804688px_0px_rgba(0,0,0,0.20)] -rotate-[10deg] p-2 lg:p-4">
                 <img src="photo-01.jpg" class="object-cover w-full h-full" />
             </div>
@@ -324,7 +324,7 @@
   <!-- Single Copy  -->
   <section class="relative px-4 pb-16 md:pb-24">
 <!-- Waves  -->
-    <div class="hidden md:block absolute w-80 h-[16rem] top-[40%] -right-[-1rem] z-30">
+    <div class="hidden md:block absolute w-80 h-[16rem] top-[40%] -right-[-1rem] z-30 view-animation fade-up">
       <include src="waves-right.svg"></include>
   </div>
     <!-- Circle SHades -->
@@ -341,7 +341,7 @@
             </h2>
           </div>
           <!-- Staff  -->
-        <div class="flex flex-wrap justify-center pt-12 pb-4 lg:w-11/12 mx-auto">
+        <div class="flex flex-wrap justify-center pt-12 pb-4 lg:w-11/12 mx-auto view-animation ">
             <!-- Staff Member -->
             <div class="relative flex flex-col items-center justify-center w-full mb-2 md:w-6/12 lg:w-4/12">
                 <!-- Staff Image  -->
@@ -632,13 +632,13 @@
 
   <!-- Image Copy  -->
   <section class="relative px-4">
-    <div class="hidden md:block absolute w-80 h-[16rem] top-[0%] left-[-28rem] z-20">
+    <div class="hidden md:block absolute w-80 h-[16rem] top-[0%] left-[-28rem] z-20 ">
       <include src="waves-left.svg"></include>
     </div>
     <div class="container py-16 md:py-24  border-t border-[#DFE7EC]">
       <div class="flex flex-wrap items-center justify-center lg:justify-between lg:flex-nowrap gap-x-8">
         <div class="w-full md:w-8/12  lg:w-6/12">
-          <img class="w-full mb-5 lg:mb-0" src="study.png" />
+          <img class="w-full mb-5 lg:mb-0 view-animation fade-right" src="study.png" />
         </div>
         <div class="w-full md:w-8/12 lg:w-6/12 ">
           <h2 class="mb-4 tracking-[-1px]">
@@ -675,7 +675,7 @@
     </div>
 
     <!--  card 	 -->
-    <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem]  z-30 p-[1px]
+    <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem]  z-30 p-[1px] view-animation  
     after:absolute after:h-full after:w-full after:content-[''] after:left-0 after:top-0  after:z-[-1] after:rounded-xl 
     after:bg-gradient-to-br after:from-pink-400 after:via-pink-400/25 after:to-pink-400 
      "> 
@@ -697,7 +697,7 @@
 
     <!--  card 	 -->
 
-    <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem] z-30 p-[1px]
+    <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem] z-30 p-[1px] view-animation  
     after:absolute after:h-full after:w-full after:content-[''] after:left-0 after:top-0  after:z-[-1] after:rounded-xl
     after:bg-gradient-to-br after:from-pink-400 after:via-pink-400/25 after:to-pink-400 
      "> 
@@ -719,7 +719,7 @@
 
    <!--  card 	 -->
 
-    <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem]  z-30 p-[1px] justify-stretch
+    <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem]  z-30 p-[1px] justify-stretch view-animation  
     after:absolute after:h-full after:w-full after:content-[''] after:left-0 after:top-0  after:z-[-1] after:rounded-xl
     after:bg-gradient-to-br after:from-pink-400 after:via-pink-400/25 after:to-pink-400 
       "> 
@@ -742,7 +742,7 @@
     <!--  card 	 -->
 
     <div class="bg-black relative flex flex-col w-full sm:flex-row max-w-[34rem] z-30 p-[1px]
-    after:absolute after:h-full after:w-full after:content-[''] after:left-0 after:top-0  after:z-[-1] after:rounded-xl
+    after:absolute after:h-full after:w-full after:content-[''] after:left-0 after:top-0  after:z-[-1] after:rounded-xl view-animation  
     after:bg-gradient-to-br after:from-pink-400 after:via-pink-400/25 after:to-pink-400 
     "> 
     <img src="inclusions-finishing.jpg" 
@@ -766,7 +766,7 @@
 
 <!-- Steps  -->
 <section class="relative px-4 py-8">
-<div class="hidden md:block absolute w-80 h-[16rem] top-[0] -right-[-1rem] z-10">
+<div class="hidden md:block absolute w-80 h-[16rem] top-[0] -right-[-1rem] z-10 view-animation fade-up">
     <include src="waves-right.svg"></include>
 </div>
 
@@ -808,7 +808,7 @@
           <img
             src="steps-01.jpg"
             alt=""
-            class="object-cover w-full rounded-xl h-44 md:h-48 lg:h-60"
+            class="object-cover w-full rounded-xl h-44 md:h-48 lg:h-60 view-animation fade-left"
           />
         </div>
       </div>
@@ -841,7 +841,7 @@
           <img
           src="steps-02.jpg"
             alt=""
-            class="object-cover w-full rounded-xl h-44 md:h-48 lg:h-60"
+            class="object-cover w-full rounded-xl h-44 md:h-48 lg:h-60 view-animation fade-right"
           />
         </div>
       </div>
@@ -872,7 +872,7 @@
           <img
           src="steps-03.jpg"
             alt=""
-            class="object-cover w-full rounded-xl h-44 md:h-48 lg:h-60"
+            class="object-cover w-full rounded-xl h-44 md:h-48 lg:h-60 view-animation fade-left"
           />
         </div>
       </div>
@@ -1056,7 +1056,7 @@
 >
 
 <div class="absolute -right-[32%] top-[16%] rounded-full w-[778px] h-[778px] origin-top-left rotate-[-15deg] outline outline-[1.50px] outline-offset-[-0.75px] outline-rose-400">
-  <div class="hidden md:block absolute w-80 h-[16rem] -top-[12rem] -left-[12rem] z-0 [&_#Rwaves]:hidden opacity-60">
+  <div class="hidden md:block absolute w-80 h-[16rem] -top-[12rem] -left-[12rem] z-0 [&_#Rwaves]:hidden opacity-60 view-animation fade-up">
     <include src="waves-right.svg"></include>
 </div>
 </div>
@@ -1489,14 +1489,14 @@
   <section class="px-2 pt-16 md:pt-24 lg:pt-28 ">
     
     <div class="mx-auto max-w-[85.125rem] relative flex flex-wrap items-center justify-center px-4 md:px-8 py-24 overflow-hidden text-white bg-black gap-x-4 gap-y-8 rounded-2xl ">
-      <div class="hidden md:block absolute w-80 h-[16rem] -top-[11rem] -left-[1rem] z-0">
+      <div class="hidden md:block absolute w-80 h-[16rem] -top-[11rem] -left-[1rem] z-0 view-animation fade-up">
         <include src="dark-waves-left.svg"></include>
       </div>
-      <div class="hidden md:block absolute w-80 h-[16rem] bottom-[16rem] right-[3rem] z-0">
+      <div class="hidden md:block absolute w-80 h-[16rem] bottom-[16rem] right-[3rem] z-0 view-animation fade-left">
           <include src="dark-waves-right.svg"></include>
       </div>
     <div class="w-full mx-auto md:8/12 lg:w-6/12">
-        <icon src="guarantee-badge.svg" class="max-w-full mx-auto mb-4 size-56"></icon>
+        <icon src="guarantee-badge.svg" class="max-w-full mx-auto mb-4 size-56 view-animation fade-up"></icon>
         <h2 class="text-center text-white   tracking-[-1px]">
           Make ‘$5K Or It’s FREE’ <br>Guarantee!
         </h2>
@@ -1622,7 +1622,7 @@
         </div>
   
         <div class="w-full mx-auto mb-8 text-center md:w-9/12">
-          <img src="offer.jpg" alt="Our Offer" />
+          <img src="offer.jpg" alt="Our Offer" class="view-animation fade-up" />
         </div>
   
         <div class="w-full mx-auto md:w-8/12 lg:w-6/12 lg:text-xl">

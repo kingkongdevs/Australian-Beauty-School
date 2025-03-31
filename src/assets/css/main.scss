@@ -90,7 +90,7 @@
     }
 
     p.eyebrow { @apply border-2 border-[#09090b]/10 w-full md:gap-2 px-8  md:px-3.5 md:px-7 md:!pe-16 py-[11px]  rounded-[100px] shadow-[0px_16px_35px_0px_rgba(1,18,60,0.07)] outline outline-1 outline-offset-[-1px] outline-zinc-100  
-      flex justify-center  text-zinc-950 text-sm font-semibold font-['Onest']  leading-[1.2]  tracking-wide mb-4 md:text-base uppercase;}
+      flex justify-center  text-zinc-950 text-[0.7rem] font-semibold font-['Onest']  leading-[1.2]  tracking-wide mb-4 md:text-base uppercase;}
 
     h1, .h1 {
       @apply 
